@@ -105,7 +105,6 @@ client.on('message',async message => {
 }
  
     if(args[1] && args[1] === 'create') {
-      if(level[author.id].level < 10) return message.channel.send('**# يجب أن يكون لديك 10 مستويات لعمل كلان , لتجميع مستويات تفاعل بالشات وسيتم حساب النقاط**');
       if(system[author.id].clan !== 'None') return message.channel.send('**# يجب عليك ان تخرج من الكلان الذي أنت به حاليا**');
  
       let m = await message.channel.send('**# أكتب أسم الكلان الان**');
